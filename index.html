@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>逸言AI 3.0 · 一句话做成一部剧</title>
+<style>
+  :root{
+    --bg:#0a0d16; --panel:#111726; --line:#1e2740;
+    --txt:#e8edf8; --muted:#8a97b4; --accent:#7a6bff; --accent2:#ff6b8a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 600px at 50% -200px,#1a1440 0%,transparent 60%),var(--bg);
+    color:var(--txt); font-family:-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  header{text-align:center;padding:80px 0 48px}
+  .logo{
+    display:inline-block; padding:6px 16px; border-radius:999px;
+    background:rgba(122,107,255,.12); border:1px solid rgba(122,107,255,.35);
+    color:#b8aaff; font-size:13px; letter-spacing:.08em; margin-bottom:24px;
+  }
+  h1{
+    font-size:52px; line-height:1.15; letter-spacing:-.02em; font-weight:800;
+    background:linear-gradient(135deg,#fff 20%,#b8aaff 60%,#ff8ba3 95%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    margin-bottom:16px;
+  }
+  .sub{color:var(--muted);font-size:19px;margin-bottom:10px}
+  .ver{color:#6f7c99;font-size:13.5px;margin-bottom:36px}
+  .ver b{color:#9aa8c7}
+  .dl{
+    display:inline-block; padding:16px 44px; border-radius:14px; font-size:17px; font-weight:700;
+    color:#fff; text-decoration:none; letter-spacing:.02em;
+    background:linear-gradient(135deg,#7a6bff,#a85bff);
+    box-shadow:0 12px 40px -12px rgba(122,107,255,.8);
+    transition:transform .15s ease,box-shadow .15s ease;
+  }
+  .dl:hover{transform:translateY(-2px);box-shadow:0 18px 50px -12px rgba(122,107,255,.95)}
+  .dl small{display:block;font-size:12px;font-weight:500;opacity:.8;margin-top:4px}
+  .dl2{
+    display:inline-block;margin-left:14px;padding:16px 28px;border-radius:14px;
+    border:1px solid var(--line);color:var(--muted);text-decoration:none;font-size:14px;
+  }
+  .dl2:hover{color:var(--txt);border-color:#33477e}
+  .tip{margin-top:22px;color:#5f6b87;font-size:13px}
+
+  section{padding:56px 0}
+  h2{font-size:26px;margin-bottom:8px;font-weight:700}
+  .h2sub{color:var(--muted);font-size:14px;margin-bottom:32px}
+
+  .shots{display:grid;gap:20px}
+  .shot{
+    border-radius:16px;overflow:hidden;border:1px solid var(--line);
+    box-shadow:0 24px 60px -30px rgba(0,0,0,.9); background:var(--panel);
+  }
+  .shot img{display:block;width:100%;height:auto}
+  .cap{padding:12px 18px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+
+  .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .feat{
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;
+  }
+  .feat .ico{font-size:22px;margin-bottom:10px}
+  .feat h3{font-size:15.5px;margin-bottom:6px;font-weight:700}
+  .feat p{font-size:13.5px;color:var(--muted);line-height:1.65}
+
+  .steps{counter-reset:s;display:grid;gap:14px}
+  .step{
+    display:flex;gap:16px;align-items:flex-start;background:var(--panel);
+    border:1px solid var(--line);border-radius:14px;padding:18px 22px;
+  }
+  .step::before{
+    counter-increment:s;content:counter(s);
+    flex:none;width:28px;height:28px;border-radius:50%;
+    background:rgba(122,107,255,.15);border:1px solid rgba(122,107,255,.4);
+    color:#b8aaff;display:grid;place-items:center;font-size:13px;font-weight:700;
+  }
+  .step b{color:#fff}
+  .step span{color:var(--muted);font-size:14px}
+
+  footer{text-align:center;padding:60px 0 80px;color:#4d5872;font-size:13px}
+  @media (max-width:640px){
+    h1{font-size:34px} .dl{width:100%} .dl2{width:100%;margin:12px 0 0;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="logo">AI 短剧 · 漫剧生产工具</div>
+    <h1>逸言AI 3.0</h1>
+    <p class="sub">一句话，做成一部剧</p>
+    <p class="ver">当前版本 <b>3.1.5</b> · 支持 Windows 10 / 11</p>
+    <a class="dl" href="https://drama-mv-2132586444.tos-cn-beijing.volces.com/yiyan/latest_3.1.5.exe">
+      下载 Windows 版
+      <small>47.1 MB · Windows 10 / 11</small>
+    </a>
+    <a class="dl2" href="https://drama-mv-2132586444.tos-cn-beijing.volces.com/yiyan/latest.zip">下载 zip 版</a>
+    <p class="tip">浏览器提示「不常下载，可能有风险」时，点「保留」即可</p>
+  </header>
+
+  <section>
+    <h2>看看它长什么样</h2>
+    <p class="h2sub">剧本、分镜、出片、封面，都在同一个工程里</p>
+    <div class="shots">
+      <div class="shot">
+        <img src="shot_home.png" alt="主界面">
+        <div class="cap">主界面 · 写一句话就能开一个新工程，左侧是工程列表和常用工具</div>
+      </div>
+      <div class="shot">
+        <img src="shot_styles.png" alt="风格面板">
+        <div class="cap">20 套画风预设 · 写实电影感、3D 国漫、2D 水墨、日系、MV 冷调，点一下定整集的画面基调</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>能干什么</h2>
+    <p class="h2sub">从一句话到一条能发的片</p>
+    <div class="feats">
+      <div class="feat">
+        <div class="ico">🎬</div>
+        <h3>剧本转分镜</h3>
+        <p>写个大概或粘一份剧本，自动拆成分镜表，每镜带景别、运镜、台词。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🎨</div>
+        <h3>20 套画风</h3>
+        <p>写实电影感、3D 国漫、2D 水墨、日系清透、MV 冷调……点一下整集统一。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🎥</div>
+        <h3>画布出片</h3>
+        <p>接豆包创作画布一镜一画布生成，10 秒带声音，出完自动下载进工程。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🗂️</div>
+        <h3>资产库</h3>
+        <p>角色、场景、道具、封面分门别类，删工程不会丢素材。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">⬆️</div>
+        <h3>在线更新</h3>
+        <p>软件自己检测新版本，一键升级，还能按版本回退。</p>
+      </div>
+      <div class="feat">
+        <div class="ico">🔄</div>
+        <h3>多账号轮换</h3>
+        <p>多个豆包账号自动排队，出问题的号自动跳过。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>怎么装</h2>
+    <p class="h2sub">三步，两分钟</p>
+    <div class="steps">
+      <div class="step"><div><b>点上面的下载按钮</b><br><span>下下来是个 .exe，直接双击运行</span></div></div>
+      <div class="step"><div><b>一路下一步</b><br><span>安装路径默认 <code>D:\逸言AI_3.0</code>，不用改</span></div></div>
+      <div class="step"><div><b>双击桌面「逸言AI 3.0」</b><br><span>第一次打开会让你填激活码，粘贴后就能用了</span></div></div>
+    </div>
+  </section>
+
+  <footer>
+    逸言AI 3.0 · 当前版本 3.1.5<br>
+    安装遇到问题：先看软件目录里的「更新说明.md」，或联系发你链接的人
+  </footer>
+</div>
+
+</body>
+</html>
